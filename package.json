@@ -12,6 +12,9 @@
   "repository": "git@github.com/y-temp4/rehype-title-figure.git",
   "author": "y-temp4 <y.temp4@gmail.com>",
   "license": "MIT",
+  "files": [
+    "lib"
+  ],
   "bugs": {
     "url": "https://github.com/y-temp4/rehype-title-figure/issues"
   },
