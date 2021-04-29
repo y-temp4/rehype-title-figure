@@ -6,7 +6,8 @@
     "test": "jest",
     "build": "tsc",
     "format": "prettier {src,tests}/**/*.ts -w",
-    "release": "standard-version"
+    "release": "standard-version",
+    "prepare": "husky install"
   },
   "repository": "git@github.com/y-temp4/rehype-title-figure.git",
   "author": "y-temp4 <y.temp4@gmail.com>",
