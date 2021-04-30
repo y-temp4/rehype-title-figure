@@ -7,7 +7,10 @@
     "build": "tsc",
     "format": "prettier {src,tests}/**/*.ts -w",
     "release": "standard-version",
-    "prepare": "husky install"
+    "prepare": "yarn build",
+    "postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable"
   },
   "repository": "git@github.com/y-temp4/rehype-title-figure.git",
   "author": "y-temp4 <y.temp4@gmail.com>",
@@ -31,6 +34,7 @@
     "hast": "1.0.0",
     "husky": "6.0.0",
     "jest": "26.6.3",
+    "pinst": "2.1.6",
     "prettier": "2.2.1",
     "rehype-raw": "5.1.0",
     "rehype-stringify": "8.0.0",
