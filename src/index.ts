@@ -36,3 +36,4 @@ export function rehypeTitleFigure(this: Processor): Transformer {
 }
 
 export default rehypeTitleFigure
+module.exports = rehypeTitleFigure
