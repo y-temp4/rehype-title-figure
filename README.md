@@ -1,6 +1,12 @@
 # rehype-title-figure
 
-[Rehype](https://github.com/rehypejs/rehype) plugin that adds a caption using the title attribute of an img.
+[![main](https://github.com/y-temp4/rehype-title-figure/actions/workflows/main.yml/badge.svg)](https://github.com/y-temp4/rehype-title-figure/actions/workflows/main.yml)
+[![codecov](https://codecov.io/gh/y-temp4/rehype-title-figure/branch/master/graph/badge.svg?token=JQZKBSL9F6)](https://codecov.io/gh/y-temp4/rehype-title-figure)
+[![npm version](https://img.shields.io/npm/v/rehype-title-figure)](https://www.npmjs.com/package/rehype-title-figure)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+
+[Rehype](https://github.com/rehypejs/rehype) plugin that adds a caption using the title attribute of the img.
 
 ## Install
 
@@ -49,4 +55,4 @@ output:
 
 ## LICENSE
 
-MIT
+MIT © [y-temp4](https://y-temp4.com/)
