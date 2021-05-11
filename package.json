@@ -1,6 +1,7 @@
 {
   "name": "rehype-title-figure",
   "version": "0.1.0",
+  "description": "Rehype plugin that adds a caption using the title attribute of the img.",
   "main": "lib/index.js",
   "scripts": {
     "test": "jest",
@@ -11,7 +12,11 @@
     "prepublishOnly": "yarn build && pinst --disable",
     "postpublish": "pinst --enable"
   },
-  "repository": "git@github.com/y-temp4/rehype-title-figure.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/y-temp4/rehype-title-figure.git"
+  },
+  "homepage": "https://github.com/y-temp4/rehype-title-figure#readme",
   "author": "y-temp4 <y.temp4@gmail.com>",
   "license": "MIT",
   "files": [
