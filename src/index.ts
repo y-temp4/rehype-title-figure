@@ -4,7 +4,7 @@ import type { Processor, Transformer } from 'unified'
 import type { Node } from 'unist'
 import type hast from 'hast'
 
-export function rehypeTitleFigure(this: Processor): Transformer {
+function rehypeTitleFigure(this: Processor): Transformer {
   function buildFigure(el: hast.Element) {
     const title = `${el.properties?.title || ''}`
     if (!title) return el
