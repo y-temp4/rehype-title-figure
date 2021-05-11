@@ -1,6 +1,6 @@
 {
   "name": "rehype-title-figure",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Rehype plugin that adds a caption using the title attribute of the img.",
   "main": "lib/index.js",
   "scripts": {
