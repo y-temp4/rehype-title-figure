@@ -6,10 +6,11 @@
   "scripts": {
     "test": "jest",
     "build": "tsc",
+    "clean": "rimraf lib",
     "format": "prettier {src,tests}/**/*.ts -w",
     "release": "standard-version",
     "postinstall": "husky install",
-    "prepublishOnly": "yarn build && pinst --disable",
+    "prepublishOnly": "yarn clean && yarn build && pinst --disable",
     "postpublish": "pinst --enable"
   },
   "repository": {
@@ -44,6 +45,7 @@
     "rehype-stringify": "8.0.0",
     "remark-parse": "9.0.0",
     "remark-rehype": "8.1.0",
+    "rimraf": "3.0.2",
     "standard-version": "9.2.0",
     "to-vfile": "6.1.0",
     "ts-jest": "26.5.5",
