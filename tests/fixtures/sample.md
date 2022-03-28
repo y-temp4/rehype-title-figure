@@ -12,3 +12,9 @@
 ![](/img/test2.jpg)
 
 <figure><img src="/img/html.png" alt="sample-alt" title="sample-title"><figcaption>sample</figcaption></figure>
+
+<div>
+
+![](https://example.com/div-wrapped.png)
+
+</div>

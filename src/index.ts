@@ -16,20 +16,17 @@ function rehypeTitleFigure(this: Processor): Transformer {
   }
   function transformer(tree: Node) {
     if (!Array.isArray(tree?.children)) return tree
-    visit<hast.Element>(
-      tree,
-      { tagName: 'p' },
-      (el: hast.Element, index: number) => {
-        if (!Array.isArray(tree?.children)) return
-        const isImgElement = (
-          el: hast.Element | hast.Comment | hast.Text
-        ): el is hast.Element => 'tagName' in el && el.tagName === 'img'
-        const images = el.children.filter(isImgElement).map(buildFigure)
-        if (images.length === 0) return
-        tree.children[index] = images
-      }
-    )
+    visit<hast.Element>(tree, { tagName: 'p' }, (el, index, parent) => {
+      if (!Array.isArray(tree?.children) || parent?.type !== 'root') return
+      const isImgElement = (
+        el: hast.Element | hast.Comment | hast.Text
+      ): el is hast.Element => 'tagName' in el && el.tagName === 'img'
+      const images = el.children.filter(isImgElement).map(buildFigure)
+      if (images.length === 0) return
+      tree.children[index] = images
+    })
     tree.children = tree.children.flat()
+
     return tree
   }
   return transformer
